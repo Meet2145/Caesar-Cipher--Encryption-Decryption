@@ -1,11 +1,29 @@
-This repository contains two Python scripts that implement encryption and decryption techniques:
+# Encryption and Decryption Techniques
 
-Caesar Cipher:
-A simple encryption method where each letter in the plaintext is shifted by a fixed number of positions down the alphabet.
-The script allows you to input a message and encrypt it using a fixed key (shift). It also provides decryption of the encrypted message using the same key.
+## Overview
 
-Substitution Cipher:
-An updated version of the Caesar cipher, where each character in the plaintext is substituted with a corresponding character in a shuffled key.
-This script allows for more complex encryption and decryption, making it harder to break compared to the Caesar cipher.
+This project includes two Python scripts for basic encryption and decryption:
 
-Both scripts are designed to demonstrate basic encryption techniques and can be run directly from the command line.
+- **Caesar Cipher**: Shifts each letter in the plaintext by a fixed number of positions.
+- **Substitution Cipher**: Substitutes characters based on a shuffled key for more complex encryption.
+
+## Features
+
+- **Caesar Cipher**: Encrypt and decrypt messages using a shift value.
+- **Substitution Cipher**: Encrypt and decrypt messages using a shuffled key.
+
+## Prerequisites
+
+- **Python 3.x**
+
+## Example
+
+**Caesar Cipher**:
+```bash
+
+python caesar_cipher.py encrypt "hello" --key 3
+# Output: khoor
+
+python caesar_cipher.py decrypt "khoor" --key 3
+# Output: hello
+
