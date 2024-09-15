@@ -1,7 +1,6 @@
 import random 
 import string 
 
-
 char = " " + string.punctuation + string.digits + string.ascii_letters
 char = list(char)
 
